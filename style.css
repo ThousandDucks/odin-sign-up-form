@@ -7,6 +7,7 @@
 html, body {
     height: 100%;
     margin: 0;
+    font-family: "Nunito Sans", Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -58,17 +59,55 @@ body {
     object-fit: cover;
 }
 
-#topTextBody, #accountCreation {
+#topTextBody {
     background-color: #F8F8F8;
-    padding: 20px;
-}
-
-#signUpSection {
-    padding: 20px;
+    padding-top: 60px;
+    padding-left: 100px;
+    padding-bottom: 70px;
 }
 
 #mainBody {
     display: flex;
     flex-direction: column;
     flex: 1; 
+}
+
+#signUp{
+    padding-left: 100px;
+    padding-bottom: 30px;
+}
+
+.signUpDetails {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-row {
+    display: flex;
+    gap: 80px;
+    margin-bottom: 20px;
+}
+
+#accountCreation {
+    background-color: #F8F8F8;
+    padding-left: 100px;
+    flex: 1;
+}
+
+input {
+    width: 250px;
+    height: 25px;
+    border: 1px solid #ccc;
+    padding-left: 6px;
+    font-family: "Nunito Sans";
+    border-radius: 5px;
+}
+
+#userPassword:invalid, #confirmPassword:invalid {
+    border: 1px solid red;
+}
+
+input:focus {
+    border: blue;
+    box-shadow: 0 0 5px;
 }
