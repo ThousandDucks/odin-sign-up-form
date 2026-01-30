@@ -1,0 +1,74 @@
+@font-face {
+  font-family: norse-bold;
+  src: url(fonts/Norse-Bold.otf);
+}
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+}
+
+#hero {
+    position: relative; 
+    height: 100vh;
+    width: 80vh; 
+}
+
+#heroImage {
+    background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.5), 
+    rgba(0, 0, 0, 0.5)), 
+    url("images/hero-image.jpg");
+
+    height: 100vh;
+    width: 80vh;
+
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+#logoContainer {
+    position: absolute; 
+    height: 20vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+    bottom: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logoText {
+    color: white;
+    font-family: norse-bold, helvetica;
+    font-size: 5rem;
+}
+
+#logo {
+    max-height: 80%; 
+    display: block;
+    height: auto; 
+    object-fit: cover;
+}
+
+#topTextBody, #accountCreation {
+    background-color: #F8F8F8;
+    padding: 20px;
+}
+
+#signUpSection {
+    padding: 20px;
+}
+
+#mainBody {
+    display: flex;
+    flex-direction: column;
+    flex: 1; 
+}
